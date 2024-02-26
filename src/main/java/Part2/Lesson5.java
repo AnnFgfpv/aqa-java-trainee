@@ -1,4 +1,3 @@
-import static java.lang.Math.sqrt;
 
 public class Lesson5 {
     public interface Shape {
