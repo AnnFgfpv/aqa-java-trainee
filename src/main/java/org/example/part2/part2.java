@@ -5,7 +5,7 @@ public class part2 {
         public static int countHigh(List<String> collection) {
             int count = 0;
             for (String str : collection) {
-                if (str.equals("High")) {
+                if (str.contains("High")) {
                     count++;
                 }
             }
