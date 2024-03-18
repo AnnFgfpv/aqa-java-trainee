@@ -14,6 +14,10 @@ public class Cat extends Animals {
     public boolean isHungry() {
         return isHungry;
     }
+    @Override
+    public void swim(int distance) {
+        System.out.println(name + " не умеет плавать!");
+    }
 
 
     public void eatFromBowl(Bowl bowl, int amount) {
@@ -27,6 +31,7 @@ public class Cat extends Animals {
     }
 
     public static void main(String[] args) {
+
         Cat[] catsArray = new Cat[5];
 
         catsArray[0] = new Cat("Барсик");
@@ -45,5 +50,6 @@ public class Cat extends Animals {
         for (Cat currentCat : catsArray) {
             System.out.println(currentCat.name + " голоден: " + currentCat.isHungry());
         }
+
     }
 }
